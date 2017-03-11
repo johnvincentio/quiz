@@ -1,0 +1,175 @@
+
+/* ----------------------------------- */
+/* Basic setup */
+/* ----------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;  /* choose a font */
+/*    border: 1px solid black;*/
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    text-rendering: optimizeLegibility;
+    overflow-y: hidden;
+}
+
+body {
+/*
+    background image not covering vertically in mobile.
+    will need different images
+*/
+/*
+    background-image: url(../images/stonehenge2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+*/
+    background-color: lightgray;
+    padding: 5px 10px;
+}
+
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+
+/* ----------------------------------- */
+/* Buttons */
+/* ----------------------------------- */
+
+.button {
+    background-color: green;
+    width: 150px;
+    border-radius: 30px;
+    vertical-align: middle;
+    padding: 5px 0;
+    margin: 5px;
+}
+.button:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+/* ----------------------------------- */
+/* Header */
+/* ----------------------------------- */
+
+header h1 {
+    background-color: #0086b3;
+    width: 300px;
+    padding: 10px 5px;
+    margin: 30px auto;
+    font-size: 28px;
+    border: 1px solid darkgray;
+}
+
+/* ----------------------------------- */
+/* Status */
+/* ----------------------------------- */
+
+#status h2,
+#status h3 {
+    font-size: 18px;
+    background-color: #0099cc;
+    padding: 10px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 2%;
+    border: 1px solid darkgray;
+}
+#status h3 {
+    font-size: 16px;
+    padding: 10px 5px;
+}
+
+/* ----------------------------------- */
+/* Question */
+/* ----------------------------------- */
+
+.question h3 {
+    font-size: 16px;
+    background-color: #9eadae;
+    padding: 10px 15px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 2%;
+    border: 1px solid darkgray;
+}
+
+/* ----------------------------------- */
+/* Answers */
+/* ----------------------------------- */
+
+.answer-button {
+    background-color:  #ccf2ff;
+    border-radius: 30px;
+    width: 100%;
+    padding: 5px 3px;
+    margin: 5px 0;
+    border: 1px solid darkgray;
+    text-align: left;
+}
+
+/* cannot use hover as jquery cannot control pseudo class */
+.answer-button-hover {
+    background-color: #80dfff;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.js-correct-answer {
+    background-color: green;
+    font-weight: bold;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    opacity: 1;
+}
+.js-wrong-answer {
+    background-color: red;
+    font-weight: bold;
+    opacity: 1;
+}
+.js-other-answer {
+    opacity: 0.5;
+}
+
+/* ----------------------------------- */
+/* Responsive */
+/* ----------------------------------- */
+
+/*@media only screen and (min-width: 480px) {}*/
+
+@media only screen and (min-width: 690px) {
+    .answer-button {
+        width: calc(90% / 2);
+        margin: 15px 10px;
+        padding: 8px 20px;
+    }
+    .question h3 {
+        max-width: 690px;
+        margin: 20px auto;
+    }
+    .answers {
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .answers {
+        max-width: 990px;
+    }
+    .answer-button {
+        max-width: 375px;
+        margin: 20px 10px;
+    }
+}

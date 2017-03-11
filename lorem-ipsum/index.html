@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Lorem Ipsum, dolor sit amet, consectetur adipisicing elit. Ipsam, illo!">
+    <meta name="keywords" content="Lorem Ipsum">
+    <meta name="author" content="John Vincent">
+    <title>Lorem Ipsum Quiz</title>
+
+    <!-- Steps
+
+5. font-size
+5a. font-weight;
+
+100. push to Github Pages
+-->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+    <!-- load Google fonts: https://fonts.google.com -->
+    <link href="https://fonts.google.com/?selection.family=Roboto:400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header role="banner">
+        <div>
+            <h1 class="center">Lorem Ipsum Quiz</h1>
+        </div>
+    </header>
+    <main role="main">
+        <section id="status">
+            <section class="center" id="js-init-status">
+                <h2>Test your knowledge of Lorem Ipsum</h2>
+                <div>
+                    <button class="button js-start-quiz" type="button">Start Quiz</button>
+                </div>
+            </section>
+            <section class="center" id="js-update-status">
+                <h3></h3>
+                <div>
+                    <button class="button js-another-quiz" type="button">Another Quiz</button>
+                </div>
+            </section>
+        </section>
+
+        <section id="quiz" role="contentinfo">
+            <section class="question">
+<!--                <h3 class="left">Ask a silly question: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos assumenda nisi nesciunt earum eaque sint maiores dolor, quidem sapiente! Eum explicabo a nihil.</h3>-->
+            </section>
+            <section class="answers center">
+<!--
+                <div>
+                    <button class="answer-button" data-item-id="1" type="button">modi iure culpa voluptatem tempore nam, excepturi quia eius!</button>
+                    <button class="answer-button" data-item-id="2" type="button">laboriosam nam ex impedit, illo quam similique doloremque?</button>
+                    <button class="answer-button" data-item-id="3" type="button">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+                    <button class="answer-button" data-item-id="4" type="button">consectetur adipisicing elit. Veritatis aliquam nobis nesciunt.</button>
+                </div>
+-->
+            </section>
+            <section class="buttons center">
+                <div>
+                    <button class="button js-next-question" type="button">Next Question</button>
+                </div>
+            </section>
+        </section>
+
+<!--
+        <section class="testing center">
+            <div>
+                <button class="button js-test-init" type="button">Init</button>
+                <button class="button js-test-quiz-over" type="button">Quiz Over</button>
+            </div>
+        </section>
+-->
+    </main>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/views.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 100px;
+}
+body {
+    background-color: lightgray;
+}
+.container {
+    font-size: 0;        /* hack to remove white space between divs */
+/*    display: inline-block;*/
+/*    margin: 0 auto;*/
+}
+.container div {
+    display: inline-block;
+/*    margin: 0 auto;*/
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid lightblue;
+    border-bottom: 50px solid transparent;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid lightblue;
+    border-bottom: 50px solid transparent;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
